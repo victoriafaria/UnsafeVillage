@@ -9,7 +9,6 @@ import UIKit
 
 class IntroSecondViewController: UIViewController {
 
-
     @IBOutlet weak var introLabel2: UILabel!
 
     override func viewDidLoad() {
@@ -33,5 +32,4 @@ class IntroSecondViewController: UIViewController {
       let queue: DispatchQueue = .init(label: "typespeed", qos: .userInteractive)
       queue.asyncAfter(deadline: .now() + 0.05, execute: writingTask)
     }
-
 }

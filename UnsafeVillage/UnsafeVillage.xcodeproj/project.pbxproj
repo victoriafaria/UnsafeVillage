@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		E223593D267817E1008D86ED /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223593C267817E1008D86ED /* IntroViewController.swift */; };
 		E223593F26781E0D008D86ED /* IntroSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223593E26781E0D008D86ED /* IntroSecondViewController.swift */; };
+		E223594126782750008D86ED /* music-background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E223594026782750008D86ED /* music-background.mp3 */; };
+		E2235943267832FA008D86ED /* scream-3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2235942267832FA008D86ED /* scream-3.mp3 */; };
+		E223594526783341008D86ED /* scream-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E223594426783341008D86ED /* scream-2.mp3 */; };
 		E24CF55A267647EC00A82434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24CF559267647EC00A82434 /* AppDelegate.swift */; };
 		E24CF55C267647EC00A82434 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24CF55B267647EC00A82434 /* SceneDelegate.swift */; };
 		E24CF55E267647EC00A82434 /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24CF55D267647EC00A82434 /* TitleViewController.swift */; };
@@ -24,6 +27,9 @@
 /* Begin PBXFileReference section */
 		E223593C267817E1008D86ED /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		E223593E26781E0D008D86ED /* IntroSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroSecondViewController.swift; sourceTree = "<group>"; };
+		E223594026782750008D86ED /* music-background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "music-background.mp3"; sourceTree = "<group>"; };
+		E2235942267832FA008D86ED /* scream-3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "scream-3.mp3"; sourceTree = "<group>"; };
+		E223594426783341008D86ED /* scream-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "scream-2.mp3"; sourceTree = "<group>"; };
 		E24CF556267647EC00A82434 /* UnsafeVillage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnsafeVillage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24CF559267647EC00A82434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E24CF55B267647EC00A82434 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +110,9 @@
 		E24CF5752676B97F00A82434 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				E223594026782750008D86ED /* music-background.mp3 */,
+				E223594426783341008D86ED /* scream-2.mp3 */,
+				E2235942267832FA008D86ED /* scream-3.mp3 */,
 				E24CF5762676B98A00A82434 /* background-terror.mp3 */,
 			);
 			path = Music;
@@ -166,10 +175,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E223594126782750008D86ED /* music-background.mp3 in Resources */,
 				E24CF566267647EE00A82434 /* LaunchScreen.storyboard in Resources */,
 				E24CF563267647EE00A82434 /* Assets.xcassets in Resources */,
 				E24CF5772676B98A00A82434 /* background-terror.mp3 in Resources */,
 				E24CF5742676709800A82434 /* THE GONjURING.ttf in Resources */,
+				E2235943267832FA008D86ED /* scream-3.mp3 in Resources */,
+				E223594526783341008D86ED /* scream-2.mp3 in Resources */,
 				E24CF561267647EC00A82434 /* Main.storyboard in Resources */,
 				E24CF5722676708300A82434 /* Lacquer-Regular.ttf in Resources */,
 			);

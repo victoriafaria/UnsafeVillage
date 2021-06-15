@@ -6,34 +6,25 @@
 //
 
 import UIKit
+import AVFoundation
 import SpriteKit
 
 class TitleViewController: UIViewController{
 
     @IBOutlet weak var pressStartButton: UIButton!
 
+    var gameBackgroundMusic = AVAudioPlayer()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        backgroundSound()
+        playSound()
     }
 
-    func backgroundSound() {
-        let sound = SKAudioNode(fileNamed: "background-terror")
-        sound.removeFromParent()
-        sound.autoplayLooped = false
-        sound.addChild(sound)
-        sound.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),SKAction.run {
-                                    sound.run(SKAction.play())}]))
-
+    func playSound() {
+        let AssortedMusics = NSURL(fileURLWithPath: Bundle.main.path(forResource: "music-background", ofType: "mp3")!)
+        gameBackgroundMusic = try! AVAudioPlayer(contentsOf: AssortedMusics as URL)
+        gameBackgroundMusic.prepareToPlay()
+        gameBackgroundMusic.numberOfLoops = -1
+        gameBackgroundMusic.play()
     }
-
-
-//    func blinkForever () {
-//        let fadeIn = SKAction.fadeIn(withDuration: 0.5)
-//        let fadeOut = SKAction.fadeOut(withDuration: 0.5)
-//        let blink = SKAction.sequence([fadeIn,fadeOut])
-//        let blinkForever = SKAction.repeatForever(blink)
-//        pressStartButton.run(blinkForever)
-//    }
 }
