@@ -19,7 +19,7 @@ class GarageViewController: UIViewController {
 
     @IBAction func button(sender: UIButton){
         keyButton.isHidden = true
-        setTyping(text: "Voce encontrou a chave para abrir o armario no quarto!")
+        setTyping(text: "Nossa uma chave, o que sera que ela abre?")
         playSoundButton()
 //        openCloset.openButton.isHidden = false
     }

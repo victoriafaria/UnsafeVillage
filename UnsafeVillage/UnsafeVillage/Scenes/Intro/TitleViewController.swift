@@ -17,7 +17,7 @@ class TitleViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        playSound()
+//        playSound()
     }
 
     func playSound() {

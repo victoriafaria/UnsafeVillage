@@ -135,7 +135,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHD-1W-C43">
-                                <rect key="frame" x="713" y="305" width="73" height="38"/>
+                                <rect key="frame" x="710" y="188" width="73" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="THEINjURING" family="THE GONjURING" pointSize="24"/>
                                 <state key="normal" title="Kitchen">
@@ -146,7 +146,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJ0-p5-Q7e">
-                                <rect key="frame" x="450" y="174" width="85" height="38"/>
+                                <rect key="frame" x="456" y="226" width="85" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="THEINjURING" family="THE GONjURING" pointSize="24"/>
                                 <state key="normal" title="Bedroom">
@@ -173,6 +173,17 @@
                                 <fontDescription key="fontDescription" name="THEINjURING" family="THE GONjURING" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAH-Fu-bd4">
+                                <rect key="frame" x="567" y="209" width="58" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="THEINjURING" family="THE GONjURING" pointSize="24"/>
+                                <state key="normal" title=".">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lzv-kK-0tp" kind="show" id="sW4-B1-YoX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VdZ-qK-Kwn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -225,26 +236,6 @@
                                     <segue destination="bqD-dJ-5Nf" kind="show" id="zYL-sq-U61"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1L5-nP-khW">
-                                <rect key="frame" x="77" y="213" width="48" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="THEINjURING" family="THE GONjURING" pointSize="24"/>
-                                <state key="normal" title="Abrir">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="openWithSender:" destination="wwr-KS-RTE" eventType="touchUpInside" id="Hty-QG-rH4"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8v-DA-SBE">
-                                <rect key="frame" x="107" y="0.0" width="739" height="422"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="slenderquarto"/>
-                                <connections>
-                                    <action selector="buttonBloodWithSender:" destination="7SP-Hn-uAA" eventType="touchUpInside" id="WwM-XK-LZg"/>
-                                    <action selector="buttonWithSender:" destination="Ex2-gQ-ZAp" eventType="touchUpInside" id="38H-zE-4UB"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K9R-Bm-0oH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -253,8 +244,6 @@
                     <connections>
                         <outlet property="aloLabel" destination="L62-cR-KwT" id="YXQ-QJ-whS"/>
                         <outlet property="iPhoneButton" destination="CPh-KG-jPG" id="pHr-Yb-wHK"/>
-                        <outlet property="openButton" destination="1L5-nP-khW" id="wzp-BD-wan"/>
-                        <outlet property="slenderButton" destination="B8v-DA-SBE" id="w8Y-5q-GgP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIQ-jN-qMQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -705,9 +694,9 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNi-Fe-VNa">
-                                <rect key="frame" x="80" y="-9" width="737" height="433"/>
+                                <rect key="frame" x="190" y="89" width="636" height="464"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="slander"/>
+                                <state key="normal" image="irmaodeitado"/>
                                 <connections>
                                     <action selector="buttonBloodWithSender:" destination="7SP-Hn-uAA" eventType="touchUpInside" id="CsE-Ei-V3g"/>
                                     <action selector="buttonWithSender:" destination="Ex2-gQ-ZAp" eventType="touchUpInside" id="V0j-HK-bIe"/>
@@ -729,11 +718,70 @@
             </objects>
             <point key="canvasLocation" x="182.60869565217394" y="2168.9732142857142"/>
         </scene>
+        <!--Game Over One View Controller-->
+        <scene sceneID="xkV-J2-SQl">
+            <objects>
+                <viewController id="lzv-kK-0tp" customClass="GameOverOneViewController" customModule="UnsafeVillage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5zQ-wK-jPd">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bedroom" translatesAutoresizingMaskIntoConstraints="NO" id="YOL-EG-UJH">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6St-m3-fhi">
+                                <rect key="frame" x="23" y="20" width="47" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="THEINjURING" family="THE GONjURING" pointSize="24"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bqD-dJ-5Nf" kind="show" id="N7I-Ot-x8d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFD-QH-fX9">
+                                <rect key="frame" x="77" y="213" width="48" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="THEINjURING" family="THE GONjURING" pointSize="24"/>
+                                <state key="normal" title="Abrir">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonWithSender:" destination="lzv-kK-0tp" eventType="touchUpInside" id="U5a-kb-BO5"/>
+                                    <action selector="openWithSender:" destination="lzv-kK-0tp" eventType="touchUpInside" id="e9R-hH-ocS"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ms9-aN-xGD">
+                                <rect key="frame" x="109" y="0.0" width="739" height="422"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="slenderquarto"/>
+                                <connections>
+                                    <action selector="buttonBloodWithSender:" destination="7SP-Hn-uAA" eventType="touchUpInside" id="ahq-5O-abK"/>
+                                    <action selector="buttonWithSender:" destination="Ex2-gQ-ZAp" eventType="touchUpInside" id="8Yr-wJ-vr4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fNQ-to-K6P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KSZ-rl-HyX"/>
+                    <size key="freeformSize" width="896" height="414"/>
+                    <connections>
+                        <outlet property="openButton" destination="BFD-QH-fX9" id="xYM-9N-d3a"/>
+                        <outlet property="slenderButton" destination="ms9-aN-xGD" id="J1c-yL-BiR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHn-Yi-HGf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4358" y="905"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Cun-KJ-Hw0"/>
-        <segue reference="H4h-RP-hhY"/>
-        <segue reference="zYL-sq-U61"/>
+        <segue reference="tXT-eJ-QT6"/>
+        <segue reference="N7I-Ot-x8d"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bathroom" width="800" height="600"/>
@@ -747,11 +795,11 @@
         <image name="florest6" width="1688" height="1024"/>
         <image name="fruta" width="360" height="360"/>
         <image name="garage" width="1600" height="900"/>
+        <image name="irmaodeitado" width="512" height="512"/>
         <image name="kitchen" width="736" height="414"/>
         <image name="lanterna" width="920" height="485"/>
         <image name="menu" width="600" height="337"/>
         <image name="sangue1" width="900" height="800"/>
-        <image name="slander" width="900" height="480"/>
         <image name="slenderquarto" width="1200" height="630"/>
         <image name="wall" width="800" height="600"/>
         <systemColor name="systemBackgroundColor">

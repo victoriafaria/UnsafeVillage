@@ -12,8 +12,6 @@ public class BedroomViewController: UIViewController {
 
     @IBOutlet weak var iPhoneButton: UIButton!
     @IBOutlet weak var aloLabel: UILabel!
-    @IBOutlet weak var openButton: UIButton!
-    @IBOutlet weak var slenderButton: UIButton!
 
     var gameBackgroundMusic = AVAudioPlayer()
 
@@ -21,13 +19,6 @@ public class BedroomViewController: UIViewController {
         iPhoneButton.isHidden = true
         playSoundButton()
         setTyping(text: "ALo.... alo....que barulho estranho!")
-    }
-
-    @IBAction func open(sender: UIButton){
-        iPhoneButton.isHidden = true
-        openButton?.isHidden = true
-        slenderButton.isHidden = false
-        playSoundScream()
     }
 
     public override func viewDidLoad() {
