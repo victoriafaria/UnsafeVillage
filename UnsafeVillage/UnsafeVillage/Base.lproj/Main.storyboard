@@ -122,10 +122,10 @@
             </objects>
             <point key="canvasLocation" x="142" y="516"/>
         </scene>
-        <!--View Controller-->
+        <!--Hall View Controller-->
         <scene sceneID="pTG-Y7-xMf">
             <objects>
-                <viewController id="bqD-dJ-5Nf" sceneMemberID="viewController">
+                <viewController id="bqD-dJ-5Nf" customClass="HallViewController" customModule="UnsafeVillage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5rQ-gD-ll4">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,29 +167,30 @@
                                     <segue destination="Ex2-gQ-ZAp" kind="presentation" id="hyT-rg-W9d"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVw-3F-77r">
-                                <rect key="frame" x="197" y="44" width="502" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seu papel sera colher as evidencias, mas nem todas fazem sentido, fique atento!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydu-gN-1WM">
+                                <rect key="frame" x="93" y="35" width="710" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="THEINjURING" family="THE GONjURING" pointSize="18"/>
-                                <state key="normal" title="nem todas as pistas tem ligacao com os acontecimentos, fique atento!">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VdZ-qK-Kwn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="5Y7-WG-JWN"/>
                     <size key="freeformSize" width="896" height="414"/>
+                    <connections>
+                        <outlet property="hallLabel" destination="Ydu-gN-1WM" id="JEp-Zr-xOz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKV-6g-8O3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2970" y="905"/>
+            <point key="canvasLocation" x="2969.5652173913045" y="904.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Bedroom View Controller-->
         <scene sceneID="am8-OV-cJt">
             <objects>
-                <viewController id="wwr-KS-RTE" sceneMemberID="viewController">
+                <viewController id="wwr-KS-RTE" customClass="BedroomViewController" customModule="UnsafeVillage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KiN-Mj-WfN">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -198,6 +199,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L62-cR-KwT">
+                                <rect key="frame" x="88" y="204" width="437" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="THEINjURING" family="THE GONjURING" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPh-KG-jPG">
+                                <rect key="frame" x="303" y="268" width="66" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="celular"/>
+                                <connections>
+                                    <action selector="buttonWithSender:" destination="wwr-KS-RTE" eventType="touchUpInside" id="0lm-ZF-unT"/>
+                                    <action selector="buttonWithSender:" destination="Ex2-gQ-ZAp" eventType="touchUpInside" id="sAp-Go-QB7"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fN6-ms-3BC">
                                 <rect key="frame" x="23" y="20" width="47" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -209,20 +225,46 @@
                                     <segue destination="bqD-dJ-5Nf" kind="show" id="zYL-sq-U61"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1L5-nP-khW">
+                                <rect key="frame" x="77" y="213" width="48" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="THEINjURING" family="THE GONjURING" pointSize="24"/>
+                                <state key="normal" title="Abrir">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="openWithSender:" destination="wwr-KS-RTE" eventType="touchUpInside" id="Hty-QG-rH4"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8v-DA-SBE">
+                                <rect key="frame" x="107" y="0.0" width="739" height="422"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="slenderquarto"/>
+                                <connections>
+                                    <action selector="buttonBloodWithSender:" destination="7SP-Hn-uAA" eventType="touchUpInside" id="WwM-XK-LZg"/>
+                                    <action selector="buttonWithSender:" destination="Ex2-gQ-ZAp" eventType="touchUpInside" id="38H-zE-4UB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K9R-Bm-0oH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <size key="freeformSize" width="896" height="414"/>
+                    <connections>
+                        <outlet property="aloLabel" destination="L62-cR-KwT" id="YXQ-QJ-whS"/>
+                        <outlet property="iPhoneButton" destination="CPh-KG-jPG" id="pHr-Yb-wHK"/>
+                        <outlet property="openButton" destination="1L5-nP-khW" id="wzp-BD-wan"/>
+                        <outlet property="slenderButton" destination="B8v-DA-SBE" id="w8Y-5q-GgP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIQ-jN-qMQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2942" y="1364"/>
+            <point key="canvasLocation" x="2940.579710144928" y="1363.3928571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Kitchen View Controller-->
         <scene sceneID="L1n-oY-TP8">
             <objects>
-                <viewController id="gra-81-cDP" sceneMemberID="viewController">
+                <viewController id="gra-81-cDP" customClass="KitchenViewController" customModule="UnsafeVillage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y23-Go-5M6">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -231,6 +273,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgm-by-XjT">
+                                <rect key="frame" x="603" y="243" width="101" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="fruta"/>
+                                <connections>
+                                    <action selector="buttonBloodWithSender:" destination="7SP-Hn-uAA" eventType="touchUpInside" id="U6L-z6-qjw"/>
+                                    <action selector="buttonWithSender:" destination="Ex2-gQ-ZAp" eventType="touchUpInside" id="UjZ-yU-t01"/>
+                                    <action selector="buttonWithSender:" destination="gra-81-cDP" eventType="touchUpInside" id="sXD-ak-McP"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6z-OA-wwa">
                                 <rect key="frame" x="23" y="19" width="47" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -253,21 +305,31 @@
                                     <segue destination="7SP-Hn-uAA" kind="presentation" id="bFz-In-0CD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecd-lC-dac">
+                                <rect key="frame" x="148" y="201" width="437" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="THEINjURING" family="THE GONjURING" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uao-zl-Avy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="jLm-Up-80L"/>
                     <size key="freeformSize" width="896" height="414"/>
+                    <connections>
+                        <outlet property="fruitButton" destination="Sgm-by-XjT" id="YD7-cM-cG7"/>
+                        <outlet property="kitchenLabel" destination="ecd-lC-dac" id="oyT-vx-NSH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7oV-hR-QKq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133" y="1364"/>
+            <point key="canvasLocation" x="131.8840579710145" y="1363.3928571428571"/>
         </scene>
         <!--Title-->
         <scene sceneID="HU6-SG-LW1">
             <objects>
-                <viewController id="Ex2-gQ-ZAp" sceneMemberID="viewController">
+                <viewController id="Ex2-gQ-ZAp" customClass="GarageViewController" customModule="UnsafeVillage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gTS-CR-4QZ">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -302,22 +364,43 @@
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="bqD-dJ-5Nf" kind="show" id="4rQ-2P-hpO"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rJ-gw-tAe">
+                                <rect key="frame" x="112" y="97" width="43" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="chave"/>
+                                <connections>
+                                    <action selector="buttonWithSender:" destination="Ex2-gQ-ZAp" eventType="touchUpInside" id="82A-ie-uoU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvs-ag-zD0">
+                                <rect key="frame" x="57" y="173" width="342" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="THEINjURING" family="THE GONjURING" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LRd-FF-hWt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="JH0-hS-EEf"/>
                     <size key="freeformSize" width="896" height="414"/>
+                    <connections>
+                        <outlet property="keyButton" destination="4rJ-gw-tAe" id="EVq-tY-Qqk"/>
+                        <outlet property="keyLabel" destination="tvs-ag-zD0" id="kKc-Xk-Rx5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ix2-3S-EK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1561" y="1364"/>
+            <point key="canvasLocation" x="1560.8695652173915" y="1363.3928571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Bathroom View Controller-->
         <scene sceneID="9tT-eK-s30">
             <objects>
-                <viewController id="7SP-Hn-uAA" sceneMemberID="viewController">
+                <viewController id="7SP-Hn-uAA" customClass="BathroomViewController" customModule="UnsafeVillage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c3W-at-R9h">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -337,11 +420,40 @@
                                     <segue destination="gra-81-cDP" kind="show" id="H4h-RP-hhY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1o-I9-RxB">
+                                <rect key="frame" x="349" y="250" width="43" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="curativo"/>
+                                <connections>
+                                    <action selector="buttonStickerWithSender:" destination="7SP-Hn-uAA" eventType="touchUpInside" id="NPu-W0-iKd"/>
+                                    <action selector="buttonWithSender:" destination="Ex2-gQ-ZAp" eventType="touchUpInside" id="fE0-LG-RjG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbr-k1-W0I">
+                                <rect key="frame" x="508" y="233" width="43" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="sangue1"/>
+                                <connections>
+                                    <action selector="buttonBloodWithSender:" destination="7SP-Hn-uAA" eventType="touchUpInside" id="IKA-jQ-JVj"/>
+                                    <action selector="buttonWithSender:" destination="Ex2-gQ-ZAp" eventType="touchUpInside" id="wIg-M3-PTB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Pj-ve-2iL">
+                                <rect key="frame" x="251" y="169" width="437" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="THEINjURING" family="THE GONjURING" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gNh-Gl-V98"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <size key="freeformSize" width="896" height="414"/>
+                    <connections>
+                        <outlet property="bloodButton" destination="Vbr-k1-W0I" id="cbw-P3-0A5"/>
+                        <outlet property="bloodLabel" destination="6Pj-ve-2iL" id="GSs-fK-v7g"/>
+                        <outlet property="stickerButton" destination="w1o-I9-RxB" id="Azv-g2-g8a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04Q-HW-ez1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -512,10 +624,10 @@
             </objects>
             <point key="canvasLocation" x="1590" y="2170"/>
         </scene>
-        <!--View Controller-->
+        <!--Florest Right View Controller-->
         <scene sceneID="cVE-ZG-1NN">
             <objects>
-                <viewController id="iAs-uW-l70" sceneMemberID="viewController">
+                <viewController id="iAs-uW-l70" customClass="FlorestRightViewController" customModule="UnsafeVillage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H4A-Vd-Ud1">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -524,6 +636,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vo-Wp-QzU">
+                                <rect key="frame" x="150" y="279" width="121" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="lanterna"/>
+                                <connections>
+                                    <action selector="buttonWithSender:" destination="iAs-uW-l70" eventType="touchUpInside" id="qXv-K3-rhh"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRu-UJ-R0n">
                                 <rect key="frame" x="29" y="27" width="47" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -535,21 +655,31 @@
                                     <segue destination="hGk-4o-ei3" kind="show" id="Cun-KJ-Hw0"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zna-tG-Evm">
+                                <rect key="frame" x="130" y="202" width="437" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="THEINjURING" family="THE GONjURING" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hVx-0Y-yHS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="5Pa-J1-eRq"/>
                     <size key="freeformSize" width="896" height="414"/>
+                    <connections>
+                        <outlet property="lightButton" destination="6Vo-Wp-QzU" id="nLW-mg-jdQ"/>
+                        <outlet property="lightLabel" destination="zna-tG-Evm" id="Mjv-Nk-LUA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4MC-un-vFd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2970" y="2170"/>
+            <point key="canvasLocation" x="2969.5652173913045" y="2168.9732142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Over Two View Controller-->
         <scene sceneID="JEn-SD-w9e">
             <objects>
-                <viewController id="ezN-fW-nNm" sceneMemberID="viewController">
+                <viewController id="ezN-fW-nNm" customClass="GameOverTwoViewController" customModule="UnsafeVillage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n7c-dT-5FY">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -558,13 +688,30 @@
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cr4-GC-Ruo">
-                                <rect key="frame" x="369" y="33" width="158" height="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNB-kB-702">
+                                <rect key="frame" x="230" y="25" width="437" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="THEINjURING" family="THE GONjURING" pointSize="24"/>
-                                <state key="normal" title="AAAAA MEU DEUS!">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKi-eI-EGW">
+                                <rect key="frame" x="199" y="313" width="108" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="sangue1"/>
+                                <connections>
+                                    <action selector="buttonBloodWithSender:" destination="7SP-Hn-uAA" eventType="touchUpInside" id="5Iy-dx-I1t"/>
+                                    <action selector="buttonWithSender:" destination="Ex2-gQ-ZAp" eventType="touchUpInside" id="1ge-SZ-bjc"/>
+                                    <action selector="buttonWithSender:" destination="ezN-fW-nNm" eventType="touchUpInside" id="V2h-rf-VVP"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNi-Fe-VNa">
+                                <rect key="frame" x="80" y="-9" width="737" height="433"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="slander"/>
+                                <connections>
+                                    <action selector="buttonBloodWithSender:" destination="7SP-Hn-uAA" eventType="touchUpInside" id="CsE-Ei-V3g"/>
+                                    <action selector="buttonWithSender:" destination="Ex2-gQ-ZAp" eventType="touchUpInside" id="V0j-HK-bIe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="doR-z8-KPy"/>
@@ -572,27 +719,40 @@
                     </view>
                     <navigationItem key="navigationItem" id="cfz-GV-l6r"/>
                     <size key="freeformSize" width="896" height="414"/>
+                    <connections>
+                        <outlet property="bloodButton" destination="IKi-eI-EGW" id="P9n-Sq-ISm"/>
+                        <outlet property="gameOverLabel" destination="hNB-kB-702" id="y1K-PS-3mH"/>
+                        <outlet property="slanderButton" destination="fNi-Fe-VNa" id="hwb-T3-jvr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2C3-aD-E3A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184" y="2170"/>
+            <point key="canvasLocation" x="182.60869565217394" y="2168.9732142857142"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FTy-XF-t3E"/>
-        <segue reference="tXT-eJ-QT6"/>
+        <segue reference="Cun-KJ-Hw0"/>
+        <segue reference="H4h-RP-hhY"/>
         <segue reference="zYL-sq-U61"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bathroom" width="800" height="600"/>
         <image name="bedroom" width="1200" height="630"/>
+        <image name="celular" width="626" height="626"/>
+        <image name="chave" width="1024" height="1024"/>
+        <image name="curativo" width="510" height="304"/>
         <image name="florest" width="626" height="357"/>
         <image name="florest2" width="1366" height="768"/>
         <image name="florest5" width="1920" height="1080"/>
         <image name="florest6" width="1688" height="1024"/>
+        <image name="fruta" width="360" height="360"/>
         <image name="garage" width="1600" height="900"/>
         <image name="kitchen" width="736" height="414"/>
+        <image name="lanterna" width="920" height="485"/>
         <image name="menu" width="600" height="337"/>
+        <image name="sangue1" width="900" height="800"/>
+        <image name="slander" width="900" height="480"/>
+        <image name="slenderquarto" width="1200" height="630"/>
         <image name="wall" width="800" height="600"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

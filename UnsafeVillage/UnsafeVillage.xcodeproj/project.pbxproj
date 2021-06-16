@@ -12,6 +12,7 @@
 		E223594126782750008D86ED /* music-background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E223594026782750008D86ED /* music-background.mp3 */; };
 		E2235943267832FA008D86ED /* scream-3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2235942267832FA008D86ED /* scream-3.mp3 */; };
 		E223594526783341008D86ED /* scream-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E223594426783341008D86ED /* scream-2.mp3 */; };
+		E2235949267835D1008D86ED /* HallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2235948267835D1008D86ED /* HallViewController.swift */; };
 		E24CF55A267647EC00A82434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24CF559267647EC00A82434 /* AppDelegate.swift */; };
 		E24CF55C267647EC00A82434 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24CF55B267647EC00A82434 /* SceneDelegate.swift */; };
 		E24CF55E267647EC00A82434 /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24CF55D267647EC00A82434 /* TitleViewController.swift */; };
@@ -22,6 +23,13 @@
 		E24CF5722676708300A82434 /* Lacquer-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E24CF5712676708300A82434 /* Lacquer-Regular.ttf */; };
 		E24CF5742676709800A82434 /* THE GONjURING.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E24CF5732676709800A82434 /* THE GONjURING.ttf */; };
 		E24CF5772676B98A00A82434 /* background-terror.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E24CF5762676B98A00A82434 /* background-terror.mp3 */; };
+		E2ED0FAE2679919D0058D544 /* GarageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ED0FAD2679919C0058D544 /* GarageViewController.swift */; };
+		E2ED0FB0267994320058D544 /* BathroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ED0FAF267994320058D544 /* BathroomViewController.swift */; };
+		E2ED0FB2267994DF0058D544 /* KitchenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ED0FB1267994DF0058D544 /* KitchenViewController.swift */; };
+		E2ED0FB4267995D00058D544 /* BedroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ED0FB3267995D00058D544 /* BedroomViewController.swift */; };
+		E2ED0FB6267997FB0058D544 /* button-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2ED0FB5267997FB0058D544 /* button-sound.mp3 */; };
+		E2ED0FB926799A060058D544 /* FlorestRightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ED0FB826799A060058D544 /* FlorestRightViewController.swift */; };
+		E2ED0FBB26799B950058D544 /* GameOverTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ED0FBA26799B950058D544 /* GameOverTwoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +38,7 @@
 		E223594026782750008D86ED /* music-background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "music-background.mp3"; sourceTree = "<group>"; };
 		E2235942267832FA008D86ED /* scream-3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "scream-3.mp3"; sourceTree = "<group>"; };
 		E223594426783341008D86ED /* scream-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "scream-2.mp3"; sourceTree = "<group>"; };
+		E2235948267835D1008D86ED /* HallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallViewController.swift; sourceTree = "<group>"; };
 		E24CF556267647EC00A82434 /* UnsafeVillage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnsafeVillage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24CF559267647EC00A82434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E24CF55B267647EC00A82434 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +51,13 @@
 		E24CF5712676708300A82434 /* Lacquer-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lacquer-Regular.ttf"; sourceTree = "<group>"; };
 		E24CF5732676709800A82434 /* THE GONjURING.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THE GONjURING.ttf"; sourceTree = "<group>"; };
 		E24CF5762676B98A00A82434 /* background-terror.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "background-terror.mp3"; sourceTree = "<group>"; };
+		E2ED0FAD2679919C0058D544 /* GarageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageViewController.swift; sourceTree = "<group>"; };
+		E2ED0FAF267994320058D544 /* BathroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomViewController.swift; sourceTree = "<group>"; };
+		E2ED0FB1267994DF0058D544 /* KitchenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenViewController.swift; sourceTree = "<group>"; };
+		E2ED0FB3267995D00058D544 /* BedroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedroomViewController.swift; sourceTree = "<group>"; };
+		E2ED0FB5267997FB0058D544 /* button-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "button-sound.mp3"; sourceTree = "<group>"; };
+		E2ED0FB826799A060058D544 /* FlorestRightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlorestRightViewController.swift; sourceTree = "<group>"; };
+		E2ED0FBA26799B950058D544 /* GameOverTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverTwoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +71,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E22359462678356E008D86ED /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				E24CF55D267647EC00A82434 /* TitleViewController.swift */,
+				E24CF56E26764F8C00A82434 /* MenuViewController.swift */,
+				E223593C267817E1008D86ED /* IntroViewController.swift */,
+				E223593E26781E0D008D86ED /* IntroSecondViewController.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		E223594726783582008D86ED /* GameSceneOne */ = {
+			isa = PBXGroup;
+			children = (
+				E2235948267835D1008D86ED /* HallViewController.swift */,
+				E2ED0FAD2679919C0058D544 /* GarageViewController.swift */,
+				E2ED0FAF267994320058D544 /* BathroomViewController.swift */,
+				E2ED0FB1267994DF0058D544 /* KitchenViewController.swift */,
+				E2ED0FB3267995D00058D544 /* BedroomViewController.swift */,
+			);
+			path = GameSceneOne;
+			sourceTree = "<group>";
+		};
 		E24CF54D267647EC00A82434 = {
 			isa = PBXGroup;
 			children = (
@@ -90,10 +129,9 @@
 		E24CF56D26764F6300A82434 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				E24CF55D267647EC00A82434 /* TitleViewController.swift */,
-				E24CF56E26764F8C00A82434 /* MenuViewController.swift */,
-				E223593C267817E1008D86ED /* IntroViewController.swift */,
-				E223593E26781E0D008D86ED /* IntroSecondViewController.swift */,
+				E22359462678356E008D86ED /* Intro */,
+				E223594726783582008D86ED /* GameSceneOne */,
+				E2ED0FB7267999DB0058D544 /* GameSceneTwo */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -112,10 +150,20 @@
 			children = (
 				E223594026782750008D86ED /* music-background.mp3 */,
 				E223594426783341008D86ED /* scream-2.mp3 */,
+				E2ED0FB5267997FB0058D544 /* button-sound.mp3 */,
 				E2235942267832FA008D86ED /* scream-3.mp3 */,
 				E24CF5762676B98A00A82434 /* background-terror.mp3 */,
 			);
 			path = Music;
+			sourceTree = "<group>";
+		};
+		E2ED0FB7267999DB0058D544 /* GameSceneTwo */ = {
+			isa = PBXGroup;
+			children = (
+				E2ED0FB826799A060058D544 /* FlorestRightViewController.swift */,
+				E2ED0FBA26799B950058D544 /* GameOverTwoViewController.swift */,
+			);
+			path = GameSceneTwo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +227,7 @@
 				E24CF566267647EE00A82434 /* LaunchScreen.storyboard in Resources */,
 				E24CF563267647EE00A82434 /* Assets.xcassets in Resources */,
 				E24CF5772676B98A00A82434 /* background-terror.mp3 in Resources */,
+				E2ED0FB6267997FB0058D544 /* button-sound.mp3 in Resources */,
 				E24CF5742676709800A82434 /* THE GONjURING.ttf in Resources */,
 				E2235943267832FA008D86ED /* scream-3.mp3 in Resources */,
 				E223594526783341008D86ED /* scream-2.mp3 in Resources */,
@@ -197,9 +246,16 @@
 				E223593D267817E1008D86ED /* IntroViewController.swift in Sources */,
 				E223593F26781E0D008D86ED /* IntroSecondViewController.swift in Sources */,
 				E24CF55E267647EC00A82434 /* TitleViewController.swift in Sources */,
+				E2ED0FAE2679919D0058D544 /* GarageViewController.swift in Sources */,
 				E24CF55A267647EC00A82434 /* AppDelegate.swift in Sources */,
+				E2ED0FB2267994DF0058D544 /* KitchenViewController.swift in Sources */,
+				E2ED0FB926799A060058D544 /* FlorestRightViewController.swift in Sources */,
 				E24CF55C267647EC00A82434 /* SceneDelegate.swift in Sources */,
+				E2235949267835D1008D86ED /* HallViewController.swift in Sources */,
+				E2ED0FB0267994320058D544 /* BathroomViewController.swift in Sources */,
+				E2ED0FB4267995D00058D544 /* BedroomViewController.swift in Sources */,
 				E24CF56F26764F8C00A82434 /* MenuViewController.swift in Sources */,
+				E2ED0FBB26799B950058D544 /* GameOverTwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
