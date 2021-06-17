@@ -24,7 +24,8 @@
 		E24CF5742676709800A82434 /* THE GONjURING.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E24CF5732676709800A82434 /* THE GONjURING.ttf */; };
 		E24CF5772676B98A00A82434 /* background-terror.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E24CF5762676B98A00A82434 /* background-terror.mp3 */; };
 		E281AE26267AAAB900FF9939 /* GameOverOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E281AE25267AAAB900FF9939 /* GameOverOneViewController.swift */; };
-		E281AE28267AADC400FF9939 /* music-background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E281AE27267AADC400FF9939 /* music-background.mp3 */; };
+		E281AE28267AADC400FF9939 /* music-background333.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E281AE27267AADC400FF9939 /* music-background333.mp3 */; };
+		E2A4EF1E267BF68E000CAC76 /* music-background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2A4EF1D267BF68E000CAC76 /* music-background.mp3 */; };
 		E2ED0FAE2679919D0058D544 /* GarageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ED0FAD2679919C0058D544 /* GarageViewController.swift */; };
 		E2ED0FB0267994320058D544 /* BathroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ED0FAF267994320058D544 /* BathroomViewController.swift */; };
 		E2ED0FB2267994DF0058D544 /* KitchenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ED0FB1267994DF0058D544 /* KitchenViewController.swift */; };
@@ -54,7 +55,8 @@
 		E24CF5732676709800A82434 /* THE GONjURING.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "THE GONjURING.ttf"; sourceTree = "<group>"; };
 		E24CF5762676B98A00A82434 /* background-terror.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "background-terror.mp3"; sourceTree = "<group>"; };
 		E281AE25267AAAB900FF9939 /* GameOverOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverOneViewController.swift; sourceTree = "<group>"; };
-		E281AE27267AADC400FF9939 /* music-background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "music-background.mp3"; sourceTree = "<group>"; };
+		E281AE27267AADC400FF9939 /* music-background333.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "music-background333.mp3"; sourceTree = "<group>"; };
+		E2A4EF1D267BF68E000CAC76 /* music-background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "music-background.mp3"; sourceTree = "<group>"; };
 		E2ED0FAD2679919C0058D544 /* GarageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageViewController.swift; sourceTree = "<group>"; };
 		E2ED0FAF267994320058D544 /* BathroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomViewController.swift; sourceTree = "<group>"; };
 		E2ED0FB1267994DF0058D544 /* KitchenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenViewController.swift; sourceTree = "<group>"; };
@@ -156,7 +158,8 @@
 				E223594026782750008D86ED /* music-background222.mp3 */,
 				E223594426783341008D86ED /* scream-2.mp3 */,
 				E2ED0FB5267997FB0058D544 /* button-sound.mp3 */,
-				E281AE27267AADC400FF9939 /* music-background.mp3 */,
+				E2A4EF1D267BF68E000CAC76 /* music-background.mp3 */,
+				E281AE27267AADC400FF9939 /* music-background333.mp3 */,
 				E2235942267832FA008D86ED /* scream-3.mp3 */,
 				E24CF5762676B98A00A82434 /* background-terror.mp3 */,
 			);
@@ -230,11 +233,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E223594126782750008D86ED /* music-background222.mp3 in Resources */,
-				E281AE28267AADC400FF9939 /* music-background.mp3 in Resources */,
+				E281AE28267AADC400FF9939 /* music-background333.mp3 in Resources */,
 				E24CF566267647EE00A82434 /* LaunchScreen.storyboard in Resources */,
 				E24CF563267647EE00A82434 /* Assets.xcassets in Resources */,
 				E24CF5772676B98A00A82434 /* background-terror.mp3 in Resources */,
 				E2ED0FB6267997FB0058D544 /* button-sound.mp3 in Resources */,
+				E2A4EF1E267BF68E000CAC76 /* music-background.mp3 in Resources */,
 				E24CF5742676709800A82434 /* THE GONjURING.ttf in Resources */,
 				E2235943267832FA008D86ED /* scream-3.mp3 in Resources */,
 				E223594526783341008D86ED /* scream-2.mp3 in Resources */,
